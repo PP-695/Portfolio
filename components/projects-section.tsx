@@ -72,7 +72,7 @@ export default function ProjectsSection() {
         <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">
           Featured Projects
         </h2>
-        <p className="text-gray-400 mb-8 text-xl">Innovative solutions I've developed</p>
+        <p className="text-white-400 mb-8 text-xl">Innovative solutions I've developed</p>
 
         <div className="flex flex-wrap gap-2 mb-8">
           {categories.map((category) => (

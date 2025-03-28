@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function HeroSection() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "Cybersecurity Specialist & Network Engineer"
+  const fullText = "Artificial Intelligence Researcher"
 
   useEffect(() => {
     let i = 0
@@ -36,7 +36,7 @@ export default function HeroSection() {
           PORTFOLIO v2.0
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">
-          ALEX NEURAL
+          PURANDAR 
         </h1>
         <div className="h-8 mb-6">
           <p className="text-xl text-gray-300 font-mono">
@@ -45,8 +45,7 @@ export default function HeroSection() {
           </p>
         </div>
         <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-          Specializing in advanced network security, penetration testing, and cryptographic systems. Building the secure
-          digital infrastructure of tomorrow.
+          I'm a passionate AI researcher with a strong background in deep learning and computer vision. I'm currently pursuing a bachelor's degree in computer science at the PES University.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button

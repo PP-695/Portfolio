@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Github, Twitter, Linkedin, Mail, Send, AlertCircle, CheckCircle } from "lucide-react"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import emailjs from '@emailjs/browser';
 
 export default function ContactSection() {
   const [formState, setFormState] = useState({
@@ -88,10 +89,9 @@ export default function ContactSection() {
   }
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, url: "#", label: "GitHub" },
-    { icon: <Twitter className="h-5 w-5" />, url: "#", label: "Twitter" },
-    { icon: <Linkedin className="h-5 w-5" />, url: "#", label: "LinkedIn" },
-    { icon: <Mail className="h-5 w-5" />, url: "#", label: "Email" },
+    { icon: <Github className="h-5 w-5" />, url: "https://github.com/PP-695", label: "GitHub" },
+    { icon: <Linkedin className="h-5 w-5" />, url: "https://www.linkedin.com/in/purandar-puneet-918b92192/", label: "LinkedIn" },
+    { icon: <Mail className="h-5 w-5" />, url: "mailto:purandarbalasa@gmail.com", label: "Email" },
   ]
 
   return (
@@ -100,7 +100,7 @@ export default function ContactSection() {
         <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">
           Get In Touch
         </h2>
-        <p className="text-gray-400 mb-12 text-xl">Have a project in mind? Let's collaborate</p>
+        <p className="text-white-400 mb-12 text-xl">Have a project in mind? Let's collaborate</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-lg p-8 hover:border-cyan-500 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.2)]">
@@ -127,7 +127,7 @@ export default function ContactSection() {
             <form onSubmit={handleSubmit}>
               <div className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-1">
+                  <label htmlFor="name" className="block text-sm font-medium text-white-400 mb-1">
                     Name
                   </label>
                   <Input
@@ -143,7 +143,7 @@ export default function ContactSection() {
                   {validationErrors.name && <p className="mt-1 text-sm text-red-400">{validationErrors.name[0]}</p>}
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-1">
+                  <label htmlFor="email" className="block text-sm font-medium text-white-400 mb-1">
                     Email
                   </label>
                   <Input
@@ -160,7 +160,7 @@ export default function ContactSection() {
                   {validationErrors.email && <p className="mt-1 text-sm text-red-400">{validationErrors.email[0]}</p>}
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-white-400 mb-1">
                     Message
                   </label>
                   <Textarea
@@ -220,7 +220,7 @@ export default function ContactSection() {
 
           <div>
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">Connect With Me</h3>
-            <p className="text-gray-400 mb-8">
+            <p className="text-white-400 mb-8">
               Feel free to reach out through any of these platforms. I'm always open to discussing new projects,
               creative ideas, or opportunities to be part of your vision.
             </p>

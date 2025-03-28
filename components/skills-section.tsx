@@ -5,17 +5,29 @@ import { useState } from "react"
 const skills = [
   { name: "C++", icon: "💻", category: "Languages" },
   { name: "Python", icon: "🐍", category: "Languages" },
-  { name: "Rust", icon: "🦀", category: "Languages" },
-  { name: "Network Security", icon: "🔒", category: "Security" },
-  { name: "Penetration Testing", icon: "🛡️", category: "Security" },
+  //{ name: "Rust", icon: "🦀", category: "Languages" },
+  //{ name: "Network Security", icon: "🔒", category: "Security" },
+  //{ name: "Penetration Testing", icon: "🛡️", category: "Security" },
   { name: "Cryptography", icon: "🔐", category: "Security" },
-  { name: "Firewall Configuration", icon: "🧱", category: "Networks" },
+  //{ name: "Firewall Configuration", icon: "🧱", category: "Networks" },
   { name: "VPN Implementation", icon: "🌐", category: "Networks" },
-  { name: "Intrusion Detection", icon: "👁️", category: "Security" },
+  //{ name: "Intrusion Detection", icon: "👁️", category: "Security" },
   { name: "Malware Analysis", icon: "🦠", category: "Security" },
   { name: "Cloud Security", icon: "☁️", category: "Cloud" },
   { name: "Docker", icon: "🐳", category: "DevOps" },
-]
+  { name: "Deep Learning", icon: "🤖", category: "AI/ML" },
+  { name: "Machine Learning", icon: "📊", category: "AI/ML" },
+  { name: "Computer Vision", icon: "📷", category: "AI/ML" },
+  { name: "Data Science", icon: "📈", category: "AI/ML" },
+  { name: "Quantum Computing", icon: "⚛️", category: "AI/ML" },
+  { name: "MERN Stack", icon: "🖥️", category: "Full Stack" },
+  { name: "Next.js", icon: "⏭️", category: "Full Stack" },
+  { name: "Node.js", icon: "🟢", category: "Backend" },
+  { name: "Express.js", icon: "🚀", category: "Backend" },
+  { name: "MongoDB", icon: "🍃", category: "Database" },
+  { name: "React", icon: "⚛️", category: "Frontend" },
+];
+
 
 export default function SkillsSection() {
   const [activeCategory, setActiveCategory] = useState("All")
@@ -30,7 +42,7 @@ export default function SkillsSection() {
         <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">
           Technical Arsenal
         </h2>
-        <p className="text-gray-400 mb-8 text-xl">Specialized skills and technologies I've mastered</p>
+        <p className="text-white-400 mb-8 text-xl">Specialized skills and technologies I've mastered</p>
 
         <div className="flex flex-wrap gap-2 mb-8">
           {categories.map((category) => (

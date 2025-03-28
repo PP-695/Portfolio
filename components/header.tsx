@@ -36,7 +36,7 @@ export default function Header() {
           href="/"
           className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500"
         >
-          ALEX.NEURAL
+          PURANDAR
         </Link>
 
         {/* Desktop Navigation */}

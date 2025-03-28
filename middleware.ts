@@ -7,9 +7,9 @@ export function middleware(request: NextRequest) {
   // Check if we're accessing the API routes
   if (pathName.startsWith('/api/')) {
     // For API routes, check if the necessary environment variables are set
-    const serviceId = process.env.EMAILJS_SERVICE_ID || "";
-    const templateId = process.env.EMAILJS_TEMPLATE_ID || "";
-    const publicKey = process.env.EMAILJS_PUBLIC_KEY || "";
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
 
 
     // Here we specifically check for the contact endpoint
