@@ -10,9 +10,10 @@ export async function sendContactEmail(data: EmailData): Promise<boolean> {
   try {
     // EmailJS configuration
     // These values should be stored in environment variables
-    const serviceId = process.env.EMAILJS_SERVICE_ID;
-    const templateId = process.env.EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.EMAILJS_PUBLIC_KEY;
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
     
     // Enhanced logging to check if environment variables are loaded
     console.log("Environment variables check:", {
